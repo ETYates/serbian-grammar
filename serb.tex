@@ -15,19 +15,25 @@
     left=0.475in,
     right=0.475in,
     top=0.75in,
-    bottom=1in,
+    bottom=0.75in,
     papersize={5.44in, 8.50in}
     }
 \setlength{\headsep}{0.1in}
 \usepackage{graphicx}
 \setdefaultlanguage{english}
-\setmainfont{OldStandardTT-Regular.ttf}[
-    BoldFont=OldStandardTT-Bold.ttf,
-    ItalicFont=OldStandardTT-Italic.ttf,
-]
+\setmainfont[Ligatures=TeX]{Old Standard}
+%\setmainfont[Ligatures=TeX]{OldStandard-Regular.otf}[
+%    BoldFont=OldStandard-Bold.otf,
+%    ItalicFont=OldStandard-Italic.otf,
+%    BoldItalicFont=OldStandard-BoldItalic.otf
+%]
 \setotherlanguage{serbian}
 \setotherlanguage[variant=polytonic]{greek}
-\newfontfamily\serbianfont[Ligatures=TeX]{OldStandardTT-Regular.ttf}
+\newfontfamily\serbianfont[Ligatures=TeX]{OldStandard-Regular.otf}[
+    BoldFont=OldStandard-Bold.otf,
+    ItalicFont=OldStandard-Italic.otf,
+    BoldItalicFont=OldStandard-BoldItalic.otf
+]
 \newfontfamily{\greekfont}[Ligatures=TeX]{GFS Porson}
 \titleclass{\part}{top}
 \let\Chaptermark\chaptermark
@@ -36,13 +42,13 @@
   {\normalfont\huge}{\centering\partname\ \thepart}{20pt}{\Large\centering}
 \titlespacing*{\part}{0pt}{30pt}{5pt}
 \titleclass{\chapter}{straight}
-\titleformat{\chapter}{\normalfont\large}{\centering\normalfont \thechapter.}{5pt}{\large\centering}
+\titleformat{\chapter}{}{\centering\normalfont \thechapter.}{5pt}{\centering}
 \renewcommand{\thesection}{\arabic{section}}
 \titleformat{\section}{\large}{\centering\textbf{\thesection.}}{5pt}{\bf \large\centering}
 \titlespacing*{\section}{5pt}{2pt}{5pt}
 \titlespacing*{\chapter} {0pt}{0pt}{2pt}
 % \titleformat{\chapter}{\normalfont\LARGE\bfseries}{\thechapter}{}{}
-\newcommand{\foot}[1]{\footnote{\normalsize #1}}
+\newcommand{\foot}[1]{\setstretch{1}\footnote{\normalsize #1}}
 \renewcommand*\footnoterule{}
 \pagestyle{fancy}
 \fancyhf{} % sets both header and footer to nothing
@@ -50,6 +56,7 @@
 \renewcommand{\chaptermark}[1]{\fancyhead[CO]{\large #1} \fancyhead[LE,RO]{\thepage}}
 \fancyfoot[CE,CO]{}
 \renewcommand{\partmark}[1]{\markleft{#1}}
+\newcommand{\grammarnote}[1]{{\phantom{} \hfill \textsc{#1} \hfill}}
 
 \begin{document}
 \begin{titlepage}
