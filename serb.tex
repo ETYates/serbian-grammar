@@ -3,6 +3,9 @@
 \usepackage[center,md]{titlesec}
 \usepackage{setspace}
 \usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
 \usepackage{tabularx}
 \usepackage{enumitem}
 \setlist{nosep}
@@ -25,6 +28,9 @@
 \setotherlanguage{serbian}
 \setotherlanguage[variant=polytonic]{greek}
 \newfontfamily\serbianfont[Ligatures=TeX]{Old Standard}
+\newfontfamily\azbuka{azbuka.ttf}
+\newfontfamily\konstytucia{konstytucia.otf}
+\newfontfamily\euroscript{EuroScript.ttf}
 \newfontfamily{\greekfont}[Ligatures=TeX]{GFS Porson}
 \titleclass{\part}{top}
 \let\Chaptermark\chaptermark
@@ -48,6 +54,8 @@
 \fancyfoot[CE,CO]{}
 \renewcommand{\partmark}[1]{\markleft{#1}}
 \newcommand{\grammarnote}[1]{{\phantom{} \hfill \textsc{#1} \hfill}}
+\newcommand\eng{English }
+\newcommand\fra{French }
 
 \begin{document}
 \begin{titlepage}
@@ -56,14 +64,14 @@
         \vspace{0.5cm}
         BY\\
         \vspace{0.5cm}
-        {\Large DRAGUTIN SUBOTIĆ}\\
+        {\Large DRAGUTIN SUBOTIĆ}\\[5pt]
         \textsc{Ph.D., Munich}\\
         \vspace{0.5cm}
         AND\\
         \vspace{0.5cm}
-        {\Large NEVILL FORBES, M.A.}\\
-        {\tiny READER IN RUSSIAN AND THE OTHER SLAVONIC LANGUAGES}\\
-        {\tiny IN THE UNIVERSITY OF OXFORD}\\
+        {\Large NEVILL FORBES, M.A.}\\[5pt]
+        {\scriptsize READER IN RUSSIAN AND THE OTHER SLAVONIC LANGUAGES}\\
+        {\scriptsize IN THE UNIVERSITY OF OXFORD}\\
         \vfill
         {\large OXFORD}\\
         {\large AT THE CLARENDON PRESS}\\

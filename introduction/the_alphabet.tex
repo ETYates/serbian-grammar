@@ -46,31 +46,76 @@
         in both alphabets :
         \newpage
         
-        \hspace*{-1.75cm}\begin{tabularx}{\paperwidth}{c|c|c|c|c|c}
+        \thispagestyle{empty}
+        \hspace*{-1.85cm}\begin{tabularx}{\paperwidth}{c|c|>{\euroscript}c|c|>{\euroscript}c|l}
             {} & \multicolumn{2}{c|}{\textbf{\Large CYRILLIC}} & \multicolumn{2}{c|}{\textbf{\Large LATIN}} &\\
             \hline
-            \shortstack{\\[1pt] Ord.\\ No.} & Printed & Written & Printed & Written & Pronunciation\\
+            \shortstack{\\[1pt] Ord.\\ No.} & Printed & \textenglish{Written} & Printed & \textenglish{Written} & Pronunciation\\[10pt]
             \hline
-            1 & {\LARGE а А} & {\LARGE\it  а А} & a A & {\LARGE \it a A}& English \emph{a} as in \emph{father}.\\
-            2 & {\LARGE б Б} & {\LARGE \it б Б} & {\LARGE b B}    & {\LARGE \it b B} & \\
-            3 & {\LARGE в В} & {\LARGE \it в В} &  {\LARGE v V}   & {\LARGE b B} & \\
-            4 & {\LARGE г Г} & {\LARGE \it г Г} &  {\LARGE g G}   & {\LARGE b B} & \\
-            5 & {\LARGE д Д} & {\LARGE \it д Д} & {\LARGE d D}    & {\LARGE b B} & \\
-            6 & {\LARGE ђ Ђ} & {\LARGE \it ђ Ђ} & \shortstack{\LARGE đ (dj), Đ\\\LARGE gj \hfill Dj}    & {\LARGE b B} & \\
-            7 & {\LARGE е Е} & {\LARGE \it е Е} & {\LARGE e E}    & {\LARGE b B} & \\
-            8 & {\LARGE ж Ж} & {\LARGE \it ж Ж} & {\LARGE ž Ž}    & {\LARGE b B} & \\
-            9 & {\LARGE з З} & {\LARGE \it з З} & {\LARGE z Z}    & {\LARGE b B} & \\
-            10 & {\LARGE и И} & {\LARGE \it и И} & {\LARGE i I}    & {\LARGE b B} & \\
-            11 & {\LARGE ј Ј} & {\LARGE \it ј Ј} & {\LARGE j J}    & {\LARGE b B} & \\
-            12 & {\LARGE к К} & {\LARGE \it к К} & {\LARGE k K}    & {\LARGE b B} & \\
-            13 & {\LARGE л Л} & {\LARGE \it л Л} & {\LARGE l L}    & {\LARGE b B} & \\
-            14 & {\LARGE љ Љ} & {\LARGE \it љ Љ} & {\LARGE lj Lj}    & {\LARGE b B} & \\
-            15 & {\LARGE м М} & {\LARGE \it м М} & {\LARGE m M}    & {\LARGE b B} & \\
-            16 & {\LARGE н Н} & {\LARGE \it н Н} & {\LARGE n N}    & {\LARGE b B} & \\
-            17 & {\LARGE њ Њ} & {\LARGE \it њ Њ} & {\LARGE nj Nj}    & {\LARGE b B} & \\
+            1 & {\Large а А} & {\Large а А} & {\Large a A} & {\Large a A} & English \emph{a} as in \emph{father} \phantom{\Huge A}\\[10pt]
+            2 & {\Large б Б} & {\Large б Б} & {\Large b B} & {\Large  b B} & English {\it b}\\[10pt]
+            3 & {\Large в В} & {\Large в В} &  {\Large v V} & {\Large v V} & English {\it v}\\[10pt]
+            4 & {\Large г Г} & {\Large  г Г} &  {\Large g G} & {\Large g G} & English {\it g} in {\it go} \\[10pt]
+            5 & {\Large д Д} & {\Large  д Д} & {\Large d D} & {\Large d D} & \eng {\it d}\\[10pt]
+            6 & {\Large ђ Ђ} & {\Large  ђ Ђ} & 
+            {\Large $\left \{ \begin{array}{l} \text{đ (dj), Đ}\\ \text{gj \quad Dj} \end{array} \right.$}
+            & {\Large dj Đ Dj} & 
+            {$\hspace{-6pt}\left \{ \begin{array}{l} \text{\hspace*{-8pt}A sound between the} \\ \text{\hspace{-8pt}\eng {\it d} in \emph{dune}} \\
+                \text{\hspace{-8pt}and {\it j} in \emph{John}} \end{array} \right.$} \\[10pt]
+            7 & {\Large е Е} & {\Large  е Е} & {\Large e E} & {\Large e E} & \eng {\it e} in \emph{pet}\\[10pt]
+            8 & {\Large ж Ж} & {\Large  ж Ж} & {\Large ž Ž} & {\Large ž Ž} & {$\hspace{-6pt}\left \{
+                    \begin{array}{l} \text{\hspace{-6pt}\eng {\it s} in \emph{pleasure}} \\ \text{\hspace{-6pt}\fra {\it j} in \emph{jour}}
+                    \end{array}\right.$} \\[10pt]
+            9 & {\Large з З} & {\Large  з З} & {\Large z Z} & {\Large z Z} & \eng {\it z} \\[10pt]
+            10 & {\Large и И} & {\Large  и И} & {\Large i I} & {\Large i I} & \eng {\it i} in \emph{machine}\\[10pt]
+            11 & {\Large ј Ј} & {\Large  ј Ј} & {\Large j J} & {\Large j J} & \eng {\it y} in \emph{yet}\\[10pt]
+            12 & {\Large к К} & {\Large  к К} & {\Large k K} & {\Large k K} & \eng {\it k}\\[10pt]
+            13 & {\Large л Л} & {\Large  л Л} & {\Large l L} & {\Large l L} & \eng {\it l}\\[10pt]
+            14 & {\Large љ Љ} & {\Large  љ Љ} & {\Large lj Lj} & {\Large lj Lj} & {$\hspace{-6pt}\left \{ 
+                    \begin{array}{l} \text{\hspace{-7pt}\eng {\it l} in \emph{million}}\\
+            \text{\hspace{-7pt}Italian {\it gl} in \emph{egli}} \end{array}\right.$}\\[10pt]
+            15 & {\Large м М} & {\Large  м М} & {\Large m M} & {\Large m M} & \eng {\it m}\\[10pt]
+            16 & {\Large н Н} & {\Large  н Н} & {\Large n N} & {\Large n N} & \eng {\it n}\\[10pt]
+            17 & {\Large њ Њ} & {\Large  њ Њ} & {\Large nj Nj} & {\Large nj Nj} & 
+            {$\hspace{-6pt}\left \{ \begin{array}{l} 
+                    \text{\hspace{-7pt}\eng {\it n} in \emph{new}}\\ 
+                    \text{\hspace{-7pt}\fra {\it gn} in \emph{Boulogne}}
+            \end{array} \right.$}\\[10pt]
         \end{tabularx}
-        
+
         \newpage
+        \thispagestyle{empty}
+        \hspace*{-1.85cm}\begin{tabularx}{\paperwidth}{c|c|>{\euroscript}c|c|>{\euroscript}c|l}
+            {} & \multicolumn{2}{c|}{\textbf{\Large CYRILLIC}} & \multicolumn{2}{c|}{\textbf{\Large LATIN}} &\\
+            \hline
+            \shortstack{\\[1pt] Ord.\\ No.} & Printed & \textenglish{Written} & Printed & \textenglish{Written} & Pronunciation\\[10pt]
+            \hline
+            18 & {\Large о О} & {\Large о О} & {\Large o O} & {\Large o O} & English \emph{o} in \emph{Olivia} \phantom{\Huge O}\\[10pt]
+            19 & {\Large п П} & {\Large п П} & {\Large p P} & {\Large p P} & English {\it p}\\[10pt]
+            20 & {\Large р Р} & {\Large р Р} & {\Large r R} & {\Large r R} & Scottish {\it r} in \emph{merry}\\[10pt]
+            21 & {\Large с С} & {\Large с С} & {\Large s S} & {\Large s S} & English {\it ss} in {\it glass} \\[10pt]
+            22 & {\Large т Т} & {\Large т Т} & {\Large t T} & {\Large t T} & \eng {\it t}\\[10pt]
+            23 & {\Large ћ Ћ} & {\Large ћ Ћ} & {\Large ć Ć} & {\Large ć Ć} & 
+            {$\hspace{-6pt}\left \{ \begin{array}{l} 
+                    \text{\hspace{-7pt} A sound between the}\\ 
+                    \text{\hspace{-7pt} \eng {\it t} in \emph{tune}}\\
+                    \text{\hspace{-7pt} and {\it ch} in \emph{chalk}}
+            \end{array} \right.$}\\[10pt]
+            24 & {\Large у У} & {\Large у У} & {\Large u U} & {\Large u U} & \eng {\it u} in \emph{rule}\\[10pt]
+            25 & {\Large ф Ф} & {\Large ф Ф} & {\Large f F} & {\Large f F} & \eng {\it f}\\[10pt]
+            26 & {\Large х Х} & {\Large х Х} & {\Large h H} & {\Large h H} & 
+            {$\hspace{-6pt}\left \{ \begin{array}{l} 
+                \text{\hspace{-7pt} Scottish {\it ch} in \emph{loch}}\\
+                \text{\hspace{-7pt} English {\it h} (cf. p. 15)}
+            \end{array} \right.$}\\[10pt]
+            27 & {\Large ц Ц} & {\Large ц Ц} & {\Large c C} & {\Large c C} & \eng {\it ts} in \emph{lots}\\[10pt]
+            28 & {\Large ч Ч} & {\Large ч Ч} & {\Large č Č} & {\Large č Č} & \eng {\it ch} in \emph{chalk}\\[10pt]
+            29 & {\Large џ Џ} & {\Large џ Џ} & {\Large dž,ǵ,Dž} & {\Large dž,Dž} & \eng {\it j} in \emph{John}\\[10pt]
+            30 & {\Large ш Ш} & {\Large ш Ш} & {\Large š Š} & {\Large š Š} & \eng {\it sh} in \emph{she}\\[10pt]
+        \end{tabularx}
+        \newpage
+
+        \vspace*{-15pt}
         \grammarnote{Note on Foreign Words}
 
         Foreign proper names when transliterated in Cyrillic are spelt 'phonetically', e.g.
@@ -82,3 +127,4 @@
         Foreign words as a rule have to conform to the Serbo-Croatian rules of phonetics and orthography, e.g. 
         
         \makebox[\textwidth]{\textit{professor} = {про̏фесор} ; \textit{engineer} = {инж\`{и}н\={е}р}}
+        \vspace*{-10pt}
