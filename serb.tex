@@ -5,7 +5,8 @@
 \usepackage{indentfirst}
 \usepackage{amsmath}
 \usepackage{calligra}
-\usepackage[T1]{fontenc}
+\usepackage[T2A]{fontenc}
+\usepackage{afterpage}
 \usepackage{tabularx}
 \usepackage{enumitem}
 \setlist{nosep}
@@ -56,10 +57,22 @@
 \newcommand{\grammarnote}[1]{{\phantom{} \hfill \textsc{#1} \hfill}}
 \newcommand\eng{English }
 \newcommand\fra{French }
+\newcommand\masc{({\it m.})}
+\newcommand\femn{({\it f.})}
+\newcommand\neut{({\it n.})}
+\newcommand{\tdg}[1]{\textdoublegrave{#1}}
 
 \begin{document}
 \begin{titlepage}
     \begin{center}
+        \vspace*{\fill}
+        {\large OXFORD UNIVERSITY PRESS}\\
+        \textsc{london\qquad edinburgh \qquad glasgow \qquad new york}\\
+        \textsc{toronto \quad melbourne \quad cape town \quad bombay}\\[4pt]
+        {\large HUMPHREY MILFORD}\\
+        \textsc{\footnotesize publisher to the university}
+        \vspace*{\fill}
+        \newpage
         {\Huge SERBIAN GRAMMAR}\\
         \vspace{0.5cm}
         BY\\
@@ -78,6 +91,7 @@
         {\large 1918}
     \end{center}
 \end{titlepage}
+\null\newpage
 
 \part*{\LARGE PREFACE}
 
